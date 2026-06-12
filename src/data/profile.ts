@@ -218,22 +218,64 @@ export const skillGroups = [
 export const writing = [
   {
     title: "Build and Learn GPT From Scratch",
-    description: "Four-part Medium series with a companion PyTorch repository covering character-level language modeling and transformer fundamentals.",
+    type: "Featured series",
+    description: "Four-part PyTorch series explaining transformer fundamentals by implementing a character-level GPT with attention, LayerNorm, residual connections, and a full training loop.",
+    tags: ["LLMs", "Transformers", "PyTorch", "Deep Learning"],
+    parts: [
+      "Part 1",
+      "Part 2",
+      "Part 3",
+      "Part 4"
+    ],
     link: "https://medium.com/@saketgarodia"
   },
   {
-    title: "Contextual multi-armed bandit",
-    description: "Medium article on the intuition behind Netflix artwork recommendation through a contextual bandit lens.",
+    title: "From Zero to API: The Data Scientist's Guide to FastAPI",
+    type: "Model serving",
+    description: "Practical guide for turning data science work into API-backed applications with FastAPI.",
+    tags: ["FastAPI", "Backend", "Model Serving", "Deployment"],
     link: "https://medium.com/@saketgarodia"
   },
   {
-    title: "Credit Default Analysis using Machine Learning from Scratch",
-    description: "Two-part practical writing on credit default modeling and machine learning fundamentals.",
+    title: "End to End Machine Learning Project",
+    type: "ML deployment",
+    description: "Training and deploying machine learning models as web apps using Flask and Heroku.",
+    tags: ["MLOps", "Flask", "Deployment", "Web Apps"],
+    link: "https://medium.com/@saketgarodia"
+  },
+  {
+    title: "Building a Recommendation Engine to Recommend Books in Spark",
+    type: "Recommender systems",
+    description: "Recommendation engine walkthrough using Spark for scalable recommendation workflows.",
+    tags: ["Recommender Systems", "Spark", "ML", "Data Engineering"],
+    link: "https://medium.com/@saketgarodia"
+  },
+  {
+    title: "Contextual Multi-Armed Bandit",
+    type: "Recommendation strategy",
+    description: "Intuition behind Netflix artwork recommendation through a contextual bandit lens.",
+    tags: ["Recommender Systems", "Bandits", "Optimization", "ML"],
+    link: "https://medium.com/@saketgarodia"
+  },
+  {
+    title: "Market Basket Analysis on 3 Million Orders from Instacart",
+    type: "Large-scale analytics",
+    description: "Market basket analysis using Spark on the Instacart orders dataset.",
+    tags: ["Spark", "Analytics", "Retail", "Data Engineering"],
+    link: "https://medium.com/@saketgarodia"
+  },
+  {
+    title: "Topic Modelling using Word Embeddings and Latent Dirichlet Allocation",
+    type: "NLP",
+    description: "Topic modeling workflow combining word embeddings and LDA for text analysis.",
+    tags: ["NLP", "Word Embeddings", "LDA", "Machine Learning"],
     link: "https://medium.com/@saketgarodia"
   },
   {
     title: "Image Classification using CNN and Transfer Learning",
+    type: "Deep learning",
     description: "Applied deep learning article covering convolutional models and transfer learning approaches.",
+    tags: ["Deep Learning", "CNNs", "Transfer Learning", "Computer Vision"],
     link: "https://medium.com/@saketgarodia"
   }
 ];
