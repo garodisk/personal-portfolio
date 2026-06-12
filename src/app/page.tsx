@@ -15,9 +15,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <Projects />
         <About />
         <Experience />
-        <Projects />
         <Skills />
         <Writing />
         <OpenSource />
@@ -25,9 +25,8 @@ export default function Home() {
         <Contact />
       </main>
       <footer className="border-t border-line bg-white/70 px-5 py-8 text-center text-sm text-graphite">
-        <p>© {new Date().getFullYear()} Saket Garodia. Built with Next.js, TypeScript, and Tailwind CSS.</p>
+        <p>(c) {new Date().getFullYear()} Saket Garodia. Built with Next.js, TypeScript, and Tailwind CSS.</p>
       </footer>
     </>
   );
 }
-

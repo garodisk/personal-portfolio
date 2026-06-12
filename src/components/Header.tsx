@@ -11,8 +11,13 @@ export function Header() {
         </a>
         <div className="hidden items-center gap-6 md:flex">
           {navItems.map((item) => (
-            <a key={item.href} href={item.href} className="text-sm font-medium text-graphite transition hover:text-ink">
+            <a
+              key={item.href}
+              href={item.href}
+              className="group relative text-sm font-semibold text-graphite transition hover:text-ink focus:outline-none focus:text-ink"
+            >
               {item.label}
+              <span className="absolute -bottom-2 left-0 h-0.5 w-0 rounded-full bg-cobalt transition-all group-hover:w-full group-focus:w-full" aria-hidden="true" />
             </a>
           ))}
         </div>
@@ -23,4 +28,3 @@ export function Header() {
     </header>
   );
 }
-

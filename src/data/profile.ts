@@ -3,7 +3,7 @@
 
 export const profile = {
   name: "Saket Garodia",
-  location: "Open to SF Bay Area, Seattle, NYC, and Remote roles",
+  location: "Open to SF Bay Area, Seattle, NYC, Chicago, Austin, and Remote roles",
   email: "saketgarodia1@gmail.com",
   phone: "513-807-5167",
   headline: "AI/ML Engineer building production GenAI, RAG, optimization, and MLOps systems",
@@ -25,10 +25,10 @@ export const profile = {
     pypiCoderBuddy: "https://pypi.org/project/coder-buddy/"
   },
   stats: [
-    { label: "Annual incremental profit", value: "$40M+" },
-    { label: "Households scored", value: "35M+" },
-    { label: "Production SLA", value: "90%+" },
-    { label: "ML / AI experience", value: "8+ yrs" }
+    { label: "Annualized Business Impact", value: "$40M+" },
+    { label: "Households Modeled", value: "35M+" },
+    { label: "Production SLA / Reliability", value: "90%+" },
+    { label: "Years ML + AI Experience", value: "8+" }
   ],
   about: [
     "I am an AI/ML Engineer and Senior Data Scientist with a software engineering foundation and 8+ years across machine learning, MLOps, optimization, NLP, and production AI systems.",
@@ -43,9 +43,9 @@ export const profile = {
 };
 
 export const navItems = [
+  { label: "Projects", href: "#projects" },
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "Writing", href: "#writing" },
   { label: "Contact", href: "#contact" }
@@ -288,4 +288,3 @@ export const certifications = [
   "Stanford University Machine Learning (online certification)",
   "Alation User Brilliance Badge"
 ];
-

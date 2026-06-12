@@ -1,25 +1,27 @@
 import Image from "next/image";
-import { Github, Linkedin, Mail, PenLine, Download, FolderKanban } from "lucide-react";
+import { BrainCircuit, Github, Linkedin, Mail, PenLine, Download, FolderKanban } from "lucide-react";
 import { profile } from "@/data/profile";
 import { Badge } from "./Badge";
 import { ButtonLink } from "./ButtonLink";
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden">
-      <div className="technical-grid absolute inset-x-0 top-0 h-80 opacity-70" aria-hidden="true" />
-      <div className="relative mx-auto grid min-h-[calc(100vh-72px)] max-w-7xl items-center gap-12 px-5 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-20">
+    <section id="top" className="hero-surface section-anchor relative overflow-hidden">
+      <div className="technical-grid absolute inset-x-0 top-0 h-96 opacity-75" aria-hidden="true" />
+      <div className="model-lines absolute inset-x-0 top-20 h-96 opacity-80" aria-hidden="true" />
+      <div className="absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-cobalt/10 blur-3xl" aria-hidden="true" />
+      <div className="relative mx-auto grid min-h-[calc(100vh-72px)] max-w-7xl items-center gap-12 px-5 py-14 sm:px-6 lg:grid-cols-[1.06fr_0.94fr] lg:px-8 lg:py-16">
         <div>
           <div className="mb-6 flex flex-wrap gap-2">
             {profile.roleFit.map((role) => (
               <Badge key={role}>{role}</Badge>
             ))}
           </div>
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-teal">{profile.location}</p>
-          <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-ink sm:text-6xl lg:text-7xl">
+          <p className="mb-4 text-sm font-semibold uppercase text-teal">{profile.location}</p>
+          <h1 className="max-w-4xl text-4xl font-semibold text-ink sm:text-6xl lg:text-7xl">
             {profile.name}
           </h1>
-          <p className="mt-5 max-w-3xl text-xl font-medium leading-8 text-slate sm:text-2xl">{profile.headline}</p>
+          <p className="mt-5 max-w-3xl text-xl font-semibold leading-8 text-slate sm:text-2xl">{profile.headline}</p>
           <p className="mt-5 max-w-2xl text-base leading-7 text-graphite sm:text-lg">{profile.pitch}</p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -45,9 +47,9 @@ export function Hero() {
 
           <dl className="mt-10 grid max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4">
             {profile.stats.map((stat) => (
-              <div key={stat.label} className="premium-border rounded-lg bg-white/78 p-4 shadow-sm">
-                <dt className="text-xs font-medium uppercase tracking-[0.14em] text-graphite">{stat.label}</dt>
-                <dd className="mt-2 text-2xl font-semibold tracking-tight text-ink">{stat.value}</dd>
+              <div key={stat.label} className="premium-border rounded-lg bg-white/86 p-4 shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:border-cobalt/30 hover:shadow-md">
+                <dt className="min-h-10 text-xs font-semibold uppercase leading-5 text-graphite">{stat.label}</dt>
+                <dd className="mt-2 text-2xl font-semibold text-ink">{stat.value}</dd>
               </div>
             ))}
           </dl>
@@ -61,11 +63,16 @@ export function Hero() {
               width={800}
               height={800}
               priority
-              className="aspect-[4/5] w-full rounded-md object-cover"
+              className="aspect-[4/5] w-full rounded-md object-cover object-center"
             />
-            <div className="absolute bottom-6 left-6 right-6 rounded-lg border border-white/60 bg-white/88 p-4 shadow-lg backdrop-blur">
-              <p className="text-sm font-semibold text-ink">Production AI builder</p>
-              <p className="mt-1 text-sm leading-6 text-graphite">
+            <div className="absolute bottom-5 left-5 right-5 rounded-lg border border-white/24 bg-ink/88 p-5 shadow-2xl backdrop-blur-md">
+              <div className="mb-3 flex items-center gap-2 text-white">
+                <span className="flex h-8 w-8 items-center justify-center rounded-md bg-teal/25 text-teal">
+                  <BrainCircuit aria-hidden="true" size={17} />
+                </span>
+                <p className="text-sm font-semibold">Production AI builder</p>
+              </div>
+              <p className="text-sm leading-6 text-white/82">
                 GenAI agents, RAG systems, optimization engines, and monitored ML deployments.
               </p>
             </div>
@@ -75,4 +82,3 @@ export function Hero() {
     </section>
   );
 }
-
