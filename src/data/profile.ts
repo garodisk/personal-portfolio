@@ -48,6 +48,7 @@ export const navItems = [
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Writing", href: "#writing" },
+  { label: "Personal", href: "#personal" },
   { label: "Contact", href: "#contact" }
 ];
 
@@ -222,40 +223,19 @@ export const writing = [
     description: "Four-part PyTorch series explaining transformer fundamentals by implementing a character-level GPT with attention, LayerNorm, residual connections, and a full training loop.",
     tags: ["LLMs", "Transformers", "PyTorch", "Deep Learning"],
     parts: [
-      "Part 1",
-      "Part 2",
-      "Part 3",
-      "Part 4"
+      { label: "Part 1", href: "https://saketgarodia.medium.com/build-and-learn-gpt-from-scratch-part-1-87f63c7be55d" },
+      { label: "Part 2", href: "https://saketgarodia.medium.com/build-and-learn-gpt-from-scratch-part-2-cc6eaa98ce38" },
+      { label: "Part 3", href: "https://saketgarodia.medium.com/build-and-learn-gpt-from-scratch-part-3-aa572e103e1d" },
+      { label: "Part 4", href: "https://saketgarodia.medium.com/build-and-learn-gpt-from-scratch-part-4-a9f4845c6b36" }
     ],
-    link: "https://medium.com/@saketgarodia"
+    link: "https://saketgarodia.medium.com/build-and-learn-gpt-from-scratch-part-1-87f63c7be55d"
   },
   {
     title: "From Zero to API: The Data Scientist's Guide to FastAPI",
     type: "Model serving",
     description: "Practical guide for turning data science work into API-backed applications with FastAPI.",
     tags: ["FastAPI", "Backend", "Model Serving", "Deployment"],
-    link: "https://medium.com/@saketgarodia"
-  },
-  {
-    title: "End to End Machine Learning Project",
-    type: "ML deployment",
-    description: "Training and deploying machine learning models as web apps using Flask and Heroku.",
-    tags: ["MLOps", "Flask", "Deployment", "Web Apps"],
-    link: "https://medium.com/@saketgarodia"
-  },
-  {
-    title: "Building a Recommendation Engine to Recommend Books in Spark",
-    type: "Recommender systems",
-    description: "Recommendation engine walkthrough using Spark for scalable recommendation workflows.",
-    tags: ["Recommender Systems", "Spark", "ML", "Data Engineering"],
-    link: "https://medium.com/@saketgarodia"
-  },
-  {
-    title: "Contextual Multi-Armed Bandit",
-    type: "Recommendation strategy",
-    description: "Intuition behind Netflix artwork recommendation through a contextual bandit lens.",
-    tags: ["Recommender Systems", "Bandits", "Optimization", "ML"],
-    link: "https://medium.com/@saketgarodia"
+    link: "https://saketgarodia.medium.com/from-zero-to-api-the-data-scientists-guide-to-fastapi-9ae3bb662f5a"
   },
   {
     title: "Market Basket Analysis on 3 Million Orders from Instacart",
@@ -265,18 +245,95 @@ export const writing = [
     link: "https://medium.com/@saketgarodia"
   },
   {
-    title: "Topic Modelling using Word Embeddings and Latent Dirichlet Allocation",
-    type: "NLP",
-    description: "Topic modeling workflow combining word embeddings and LDA for text analysis.",
-    tags: ["NLP", "Word Embeddings", "LDA", "Machine Learning"],
-    link: "https://medium.com/@saketgarodia"
-  },
-  {
     title: "Image Classification using CNN and Transfer Learning",
     type: "Deep learning",
     description: "Applied deep learning article covering convolutional models and transfer learning approaches.",
     tags: ["Deep Learning", "CNNs", "Transfer Learning", "Computer Vision"],
     link: "https://medium.com/@saketgarodia"
+  }
+];
+
+export const personal = {
+  title: "Curious builder, traveler, and lifelong AI learner.",
+  description:
+    "I am a curious soul who loves to travel, meet people, and keep learning. I have studied across three continents, visited 25+ countries, attend AI conferences, and stay close to the fast-moving AI/LLM ecosystem through courses, projects, talks, papers, and self-learning from YouTube.",
+  highlights: [
+    "Studied across three continents",
+    "Visited 25+ countries",
+    "Attend AI conferences and builder events",
+    "Passionate about AI, LLMs, and continuous self-learning"
+  ],
+  images: [
+    { src: "/personal/vercel_picture.png", alt: "Saket Garodia at a Vercel event", caption: "AI and builder community" },
+    { src: "/personal/picture1.png", alt: "Saket Garodia travel photo", caption: "Travel and people" },
+    { src: "/personal/picture2.png", alt: "Saket Garodia personal photo", caption: "Curiosity beyond work" }
+  ]
+};
+
+export const learningFocus = [
+  "Computer Science",
+  "Artificial Intelligence",
+  "Machine Learning",
+  "Deep Learning",
+  "MLOps",
+  "AI / LLMs"
+];
+
+export const certificationNote =
+  "I stay current through structured AI courses, hands-on projects, conferences, papers, and self-learning from YouTube and technical communities.";
+
+export const certifications = [
+  {
+    name: "AI Engineer Agentic Track: The Complete Agent & MCP course",
+    provider: "Udemy",
+    issued: "Issued Nov 2025",
+    credentialId: "UC-34240328-d441-4040-ac8a-fb7775eadbd5",
+    description:
+      "Hands-on agentic AI development with LangGraph, OpenAI SDK, CrewAI, and Model Context Protocol."
+  },
+  {
+    name: "LLM Engineering: Master AI, Large Language Models & Agents",
+    provider: "Udemy",
+    issued: "Issued Jun 2025",
+    credentialId: "UC-98c7865f-9dc0-4a6c-92c7-922be614dfld",
+    description: "End-to-end Generative AI development, LLM APIs, AI applications, and agent workflows."
+  },
+  {
+    name: "AI Coder / Claude Code",
+    provider: "Udemy",
+    issued: "Self-directed AI engineering coursework",
+    description: "Practical AI coding assistant workflows and modern developer-agent patterns."
+  },
+  {
+    name: "LLMOps in Production",
+    provider: "Udemy",
+    issued: "Self-directed AI engineering coursework",
+    description: "Production patterns for deploying, evaluating, and operating LLM-powered systems."
+  },
+  {
+    name: "Neural Networks and Deep Learning",
+    provider: "DeepLearning.AI",
+    issued: "Online certification"
+  },
+  {
+    name: "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
+    provider: "DeepLearning.AI",
+    issued: "Online certification"
+  },
+  {
+    name: "Generative AI fundamentals",
+    provider: "Online certification",
+    issued: "Credential listed on LinkedIn"
+  },
+  {
+    name: "Stanford University Machine Learning",
+    provider: "Stanford University",
+    issued: "Online certification"
+  },
+  {
+    name: "Alation User Brilliance Badge",
+    provider: "Alation",
+    issued: "Credential listed on LinkedIn"
   }
 ];
 
@@ -305,7 +362,7 @@ export const education = [
   {
     school: "University of Cincinnati",
     credential: "M.S. Business Analytics",
-    details: "GPA 4.0/4.0, Graduate Merit Scholarship",
+    details: "GPA 4.0/4.0, Graduate Merit Scholarship. Focused on applied analytics, machine learning, and data-driven decision systems.",
     period: "Aug 2019 - Aug 2020"
   },
   {
@@ -320,13 +377,4 @@ export const education = [
     details: "Computer science foundation across software engineering and systems.",
     period: "Jul 2010 - Jun 2014"
   }
-];
-
-export const certifications = [
-  "Neural Networks and Deep Learning",
-  "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
-  "AI Engineer Agentic Track: The Complete Agent & MCP course",
-  "Generative AI fundamentals",
-  "Stanford University Machine Learning (online certification)",
-  "Alation User Brilliance Badge"
 ];

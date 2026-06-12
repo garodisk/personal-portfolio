@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BrainCircuit, Github, Linkedin, Mail, PenLine, Download, FolderKanban } from "lucide-react";
+import { Github, Linkedin, Mail, PenLine, Download, FolderKanban } from "lucide-react";
 import { profile } from "@/data/profile";
 import { Badge } from "./Badge";
 import { ButtonLink } from "./ButtonLink";
@@ -65,17 +65,6 @@ export function Hero() {
               priority
               className="aspect-[4/5] w-full rounded-md object-cover object-center"
             />
-            <div className="absolute bottom-5 left-5 right-5 rounded-lg border border-white/24 bg-ink/88 p-5 shadow-2xl backdrop-blur-md">
-              <div className="mb-3 flex items-center gap-2 text-white">
-                <span className="flex h-8 w-8 items-center justify-center rounded-md bg-teal/25 text-teal">
-                  <BrainCircuit aria-hidden="true" size={17} />
-                </span>
-                <p className="text-sm font-semibold">Production AI builder</p>
-              </div>
-              <p className="text-sm leading-6 text-white/82">
-                GenAI agents, RAG systems, optimization engines, and monitored ML deployments.
-              </p>
-            </div>
           </div>
         </div>
       </div>

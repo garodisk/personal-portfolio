@@ -14,7 +14,7 @@ export function Writing() {
         <div>
           <p className="text-sm font-semibold uppercase text-teal">Medium</p>
           <p className="mt-2 max-w-3xl text-sm leading-6 text-white/78">
-            These articles show how I explain AI/ML concepts clearly: from transformers and APIs to deployment, recommender systems, Spark, NLP, and deep learning.
+            These articles show how I explain AI/ML concepts clearly: from transformers and APIs to Spark analytics and deep learning.
           </p>
         </div>
         <a
@@ -48,9 +48,15 @@ export function Writing() {
             {"parts" in item && item.parts ? (
               <div className="mt-4 flex flex-wrap gap-2">
                 {item.parts.map((part) => (
-                  <span key={part} className="rounded-md border border-line bg-white px-2.5 py-1 text-xs font-semibold text-slate">
-                    {part}
-                  </span>
+                  <a
+                    key={part.href}
+                    href={part.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-md border border-line bg-white px-2.5 py-1 text-xs font-semibold text-slate transition hover:border-cobalt/40 hover:bg-cobalt hover:text-white"
+                  >
+                    {part.label}
+                  </a>
                 ))}
               </div>
             ) : null}

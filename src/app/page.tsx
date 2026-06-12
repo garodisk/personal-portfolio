@@ -5,6 +5,7 @@ import { Experience } from "@/components/Experience";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { OpenSource } from "@/components/OpenSource";
+import { Personal } from "@/components/Personal";
 import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
 import { Writing } from "@/components/Writing";
@@ -22,6 +23,7 @@ export default function Home() {
         <Writing />
         <OpenSource />
         <Education />
+        <Personal />
         <Contact />
       </main>
       <footer className="border-t border-line bg-white/70 px-5 py-8 text-center text-sm text-graphite">
