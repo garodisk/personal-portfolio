@@ -266,7 +266,10 @@ export const personal = {
   images: [
     { src: "/personal/vercel_picture.png", alt: "Saket Garodia at a Vercel event", caption: "AI and builder community" },
     { src: "/personal/picture1.png", alt: "Saket Garodia travel photo", caption: "Travel and people" },
-    { src: "/personal/picture2.png", alt: "Saket Garodia personal photo", caption: "Curiosity beyond work" }
+    { src: "/personal/picture2.png", alt: "Saket Garodia personal photo", caption: "Curiosity beyond work" },
+    { src: "/personal/picture3.png", alt: "Saket Garodia travel memory", caption: "Global perspective" },
+    { src: "/personal/picture4.png", alt: "Saket Garodia personal memory", caption: "Learning through places" },
+    { src: "/personal/picture5.png", alt: "Saket Garodia personal travel photo", caption: "25+ countries and counting" }
   ]
 };
 
